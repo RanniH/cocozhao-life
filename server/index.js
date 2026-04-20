@@ -13,10 +13,7 @@ const app = express();
 
 fs.mkdirSync(config.UPLOAD_DIR, { recursive: true });
 
-app.use(cors({
-  origin: config.CORS_ORIGIN === '*' ? true : config.CORS_ORIGIN.split(','),
-  credentials: true,
-}));
+app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(config.UPLOAD_DIR));
 app.use('/api/auth', authRoutes);
