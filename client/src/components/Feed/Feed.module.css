@@ -1,0 +1,36 @@
+.feed {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+.status {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-text-tertiary);
+  font-size: 15px;
+}
+
+.sentinel {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.end {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,43 @@
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  animation: fadeInUp 0.4s ease both;
+}
+
+.content {
+  font-size: 15px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--color-text);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.time {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+
+.deleteBtn {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: all var(--transition);
+}
+
+.deleteBtn:hover {
+  color: var(--color-danger);
+  background: rgba(232, 93, 93, 0.08);
+}

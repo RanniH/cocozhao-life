@@ -1,0 +1,14 @@
+{
+  "name": "cocozhao-life",
+  "private": true,
+  "scripts": {
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "cd client && npx vite",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "cd client && npm run build",
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

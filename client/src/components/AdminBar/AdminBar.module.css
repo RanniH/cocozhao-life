@@ -1,0 +1,23 @@
+.bar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.logoutBtn {
+  font-size: 13px;
+  color: var(--color-accent);
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: background var(--transition);
+}
+
+.logoutBtn:hover {
+  background: var(--color-accent-light);
+}

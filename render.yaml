@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: cocozhao-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        value: https://pinme.eth.limo
+    disk:
+      name: cocozhao-data
+      mountPath: /data
+      sizeGB: 1

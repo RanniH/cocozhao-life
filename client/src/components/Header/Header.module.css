@@ -1,0 +1,53 @@
+.header {
+  text-align: center;
+  padding: 48px 20px 32px;
+  position: relative;
+  background: linear-gradient(180deg, var(--color-accent-light) 0%, var(--color-bg) 100%);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 auto 16px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px rgba(212, 165, 116, 0.3);
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.bio {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.settingsBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  transition: background var(--transition);
+}
+
+.settingsBtn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
